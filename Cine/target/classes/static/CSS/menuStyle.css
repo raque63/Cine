@@ -1,0 +1,60 @@
+ol,ul {
+    list-style: none;
+}
+.encabezado{
+    background-color: #fff;
+    border-top-width: 300px;
+    border-bottom: 5px solid #4da4af;
+}
+.principal{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:5px;
+}
+.logo{
+    height: 90px;
+}
+.letras-encabezado{
+    font-size: xx-large;
+    color:#4da4af;
+    font-family: "Avenir Next LT Pro Dem";
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+}
+.menu{
+    padding-left: 100px;
+    display: flex;
+}
+.menu li a{
+    display: block;
+    color: #4da4af;
+    text-decoration: none;
+    padding:10px 15px;
+}
+.menu li a:hover{
+    background-color: lightgrey;
+}
+/* OCULTA SUBMENU por default */
+ul.menu li ul {
+    position: absolute;
+    background-color: black;
+    display: none;
+}
+
+/*MUESTRA SUBMENU cuando el mouse esta encima del menu*/
+ul.menu li:hover ul{
+    display: block;
+}
+
+/*SUBMENU NORMAL*/
+ul.menu li:hover ul li a{
+    color: white;
+    padding: 2px 16px 2px 10px;
+}
+
+/*SUMBENU SELECCIONADO*/
+ul.menu li:hover ul li a:hover{
+    background-color: lightgrey;
+}
